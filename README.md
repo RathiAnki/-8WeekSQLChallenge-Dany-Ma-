@@ -2,14 +2,14 @@ This repository is where I’ve shared my solutions to the 8 case studies from t
 
 A huge thank you to Data with Danny for putting together such an insightful and engaging set of case studies! 👋
 
-Table of Contents
-Click on each link to view the solutions:
+## 📚 Table of Contents
+
+Please find the solution links for the case studies below. Simply click on the links to access solution.
+
 
 [Case Study #1](https://github.com/RathiAnki/-8WeekSQLChallenge-Dany-Ma-/blob/main/Case%20Study%20%231)
 
 
-
-**Tool Used**   (SQL Server)
 
  **Learnings**
  
