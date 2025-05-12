@@ -1,8 +1,10 @@
 # 🍜 Case Study #1: Danny's Diner 
 
+![Danny's Diner](https://github.com/user-attachments/assets/18b9c403-3ff0-4c7e-b7ca-36d130537a5b)
 
 
 ## 📌 Business Problem
+
 Danny owns a small Japanese restaurant and wants to analyze customer behavior using SQL. He needs insights into:
 Customer spending habits
 Visit frequency
@@ -15,16 +17,16 @@ Sales – Records customer purchases with order dates and product IDs.
 Menu – Maps product IDs to menu items and their prices.
 Members – Tracks customers who joined the loyalty program.
 
+** ERD Diagram*
 
-## Question and Solution
+![ERD_Diagram](https://github.com/user-attachments/assets/aa65554a-9793-4727-9d43-bc91d1d44a90)
 
-Select * from sales 
-join  menu
-on sales.product_id =menu. product_id
-left join members  me
-on sales.customer_id =me.customer_id;
+
+
+
+## Question and Solution:
+
   
-
 **1. What is the total amount each customer spent at the restaurant?
 
 Select s.customer_id,Sum(m.price) as amount_spent from sales s
