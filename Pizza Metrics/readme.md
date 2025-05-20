@@ -21,40 +21,56 @@ He created an ERD to plan his database and now needs help cleaning the data and 
 
 ## 🧼 Data Cleaning 
 
-Update the existing columns with proper NULLs and remove unwanted text
+- Update the existing columns with proper NULLs and remove unwanted text
+- Convert text values in distance and duration columns to numeric-friendly format
 
-Convert text values in distance and duration columns to numeric-friendly format
+````sql
+--Updating Customer_Orders
 
+Update customer_orders
+Set exclusions = null
+where exclusions in ('null','');
 
--- Cleaning customer_orders table
+Update customer_orders
+Set extras = null
+where extras in ('null','');
 
-UPDATE customer_orders
-SET exclusions = NULL
-WHERE exclusions IN ('null', '');
+-- Updating runner_orders
 
-UPDATE customer_orders
-SET extras = NULL
-WHERE extras IN ('null', '');
-
-
--- Cleaning runner_orders table
-
-UPDATE runner_orders
-SET pickup_time = NULL
-WHERE pickup_time = 'null';
+Update runner_orders
+Set pickup_time = null
+where pickup_time ='null';
 
 UPDATE runner_orders
 SET duration = RTRIM(duration, ' minutes');
 
 UPDATE runner_orders
-SET duration = NULL
-WHERE duration = 'null';
+SET duration = null
+where duration='null';
 
 UPDATE runner_orders
 SET distance = RTRIM(distance, ' km');
 
 UPDATE runner_orders
-SET distance = NULL
-WHERE distance = 'null';
+SET distance = null
+where distance='null';
+
+`````
+- We’ll now modify the columns to ensure the correct data types for analysis.
+
+
+
+````sql
+Alter table runner_orders
+alter column pickup_time datetime;
+
+Alter table runner_orders
+alter column distance float;
+
+Alter table runner_orders
+alter column duration int;
+
+
+`````
 
 
