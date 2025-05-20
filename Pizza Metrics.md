@@ -19,21 +19,42 @@ He created an ERD to plan his database and now needs help cleaning the data and 
 
 ![image](https://github.com/user-attachments/assets/672b1086-02ed-40d9-9bfe-5abb0c18c0b0)
 
--- Replace 'null' and empty strings with actual NULLs in exclusions
+## 🧼 Data Cleaning 
+
+Update the existing columns with proper NULLs and remove unwanted text
+
+Convert text values in distance and duration columns to numeric-friendly format
+
+
+-- Cleaning customer_orders table
 
 UPDATE customer_orders
 SET exclusions = NULL
 WHERE exclusions IN ('null', '');
 
-
--- Replace 'null' and empty strings with actual NULLs in extras
 UPDATE customer_orders
 SET extras = NULL
 WHERE extras IN ('null', '');
 
 
+-- Cleaning runner_orders table
+
+UPDATE runner_orders
+SET pickup_time = NULL
+WHERE pickup_time = 'null';
+
+UPDATE runner_orders
+SET duration = RTRIM(duration, ' minutes');
+
+UPDATE runner_orders
+SET duration = NULL
+WHERE duration = 'null';
+
+UPDATE runner_orders
+SET distance = RTRIM(distance, ' km');
+
+UPDATE runner_orders
+SET distance = NULL
+WHERE distance = 'null';
 
 
-
-
-## Question and Solution:
