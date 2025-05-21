@@ -1,5 +1,5 @@
 
-# 🍜 Case Study #2: Pizza Metrics
+# 🍜 Case Study #2: Pizza Runner
 
 ![image](https://github.com/user-attachments/assets/81eddaaf-72d4-4321-8c37-55591ae9f98e)
 
