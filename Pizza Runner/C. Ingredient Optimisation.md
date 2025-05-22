@@ -1,3 +1,6 @@
+#  Ingredient Optimisation : Solution
+
+
 **- Data cleaning and adjustments**
 
 ````sql
@@ -137,7 +140,7 @@ on c.id =ex.id
 | 10       | 104         | 1        | Meatlovers - Exclude BBQ Sauce,Mushrooms - Extra Bacon,Cheese |
 
 
-**- could you help me with these two queries?**
+# could you help me with these two queries?
 ````sql
 --Generate an alphabetically ordered comma separated ingredient list for each pizza order from the customer_orders table and add a 2x in front of any relevant ingredients
 --For example: "Meat Lovers: 2xBacon, Beef, ... , Salami"
