@@ -28,12 +28,13 @@ He created an ERD to plan his database and now needs help cleaning the data and 
 --Updating Customer_Orders
 
 Update customer_orders
-Set exclusions = null
-where exclusions in ('null','');
+Set extras =''
+where extras is null 
 
 Update customer_orders
-Set extras = null
-where extras in ('null','');
+Set exclusions =''
+where exclusions is null 
+
 
 -- Updating runner_orders
 
