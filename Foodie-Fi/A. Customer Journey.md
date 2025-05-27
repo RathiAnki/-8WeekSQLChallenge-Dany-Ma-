@@ -13,7 +13,7 @@ Select s.customer_id,s.plan_id,s.start_date
 from plans p
 join subscriptions s
 on p.plan_id =s.plan_id
-where customer_id in (1,2,11,1315,16,18,19)
+where customer_id in (1,2,11,13,15,16,18,19)
 ````
 | customer_id | plan_id | start_date  |
 |-------------|---------|-------------|
