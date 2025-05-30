@@ -20,5 +20,5 @@ Each record in the dataset is related to a specific aggregated slice of the unde
 ![image](https://github.com/user-attachments/assets/7f741664-0405-4d27-89fa-a4c3daaa3411)
 
  # Case Study 
-1.  Data Cleansing Steps
+1.  [Data Cleansing Steps](https://github.com/RathiAnki/-8WeekSQLChallenge-Dany-Ma-/blob/main/Data%20Mart/A.%20Data%20Cleansing%20Steps.md)
  
