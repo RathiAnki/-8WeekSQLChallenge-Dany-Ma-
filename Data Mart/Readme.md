@@ -22,3 +22,4 @@ Each record in the dataset is related to a specific aggregated slice of the unde
  # Case Study 
 1.  [Data Cleansing Steps](https://github.com/RathiAnki/-8WeekSQLChallenge-Dany-Ma-/blob/main/Data%20Mart/A.%20Data%20Cleansing%20Steps.md)
 2. [ Data Exploration](https://github.com/RathiAnki/-8WeekSQLChallenge-Dany-Ma-/blob/main/Data%20Mart/B.%20Data%20Exploration.md)
+3. [Before & After Analysis](https://github.com/RathiAnki/-8WeekSQLChallenge-Dany-Ma-/blob/main/Data%20Mart/C.%20Before%20%26%20After%20Analysis%20.md)
