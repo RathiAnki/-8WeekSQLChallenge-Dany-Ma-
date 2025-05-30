@@ -22,23 +22,24 @@ segment	demographic
 
 - Generate a new avg_transaction column as the sales value divided by transactions rounded to 2 decimal places for each record
 ````sql
-Select  distinct CONVERT(DATE, week_date, 3)as week_date
-,DATEPART(ww,CONVERT(DATE, week_date, 3))as week_number ,
-Month(CONVERT(DATE, week_date, 3))as month_number,
-Year(CONVERT(DATE, week_date, 3))as calendar_year,
-region,platform,isnull(nullif(cast(segment as varchar(10)),'null'), 'unknown')as segment
-,coalesce(case
-when segment like '%1' then 'Young Adults'
-when segment like '%2' then  'Middle Aged'
-when  segment like '%3' or segment like '%4' then 'Retirees'
-end,'unknown') as age_band
-, coalesce(case 
-when  segment like 'C%' then 'Couples'
-when segment like 'F%' then 'Families'
-end ,'unknown')as demographic,
-customer_type ,
-transactions ,sales,
-round((sales/transactions ),2)as avg_transaction 
+Select
+  distinct CONVERT(DATE, week_date, 3)as week_date
+  ,DATEPART(ww,CONVERT(DATE, week_date, 3))as week_number ,
+  Month(CONVERT(DATE, week_date, 3))as month_number,
+  Year(CONVERT(DATE, week_date, 3))as calendar_year,
+  region,platform,isnull(nullif(cast(segment as varchar(10)),'null'), 'unknown')as segment
+  ,coalesce(case
+  when segment like '%1' then 'Young Adults'
+  when segment like '%2' then  'Middle Aged'
+  when  segment like '%3' or segment like '%4' then 'Retirees'
+  end,'unknown') as age_band
+  , coalesce(case 
+  when  segment like 'C%' then 'Couples'
+  when segment like 'F%' then 'Families'
+  end ,'unknown')as demographic,
+  customer_type ,
+  transactions ,sales,
+  round((sales/transactions ),2)as avg_transaction 
 into clean_weekly_sales
 from weekly_sales
 
