@@ -1,14 +1,20 @@
 
 ![image](https://github.com/user-attachments/assets/eafcf194-1eba-45ce-a65b-30db0a45dee3)
 
-Danny has come up with a unique concept—Data Bank—a next-generation digital bank that combines financial services with secure, distributed cloud data storage.
-Unlike traditional banks, Data Bank has no physical branches and operates entirely online, similar to the Neo-Bank model.
-Here’s the catch:
+# Business Problem
 
-Customers' cloud data storage limits are directly tied to their account balances. The more money customers have in their accounts, the more storage space they get.
+Danny’s Data Bank is a next-gen digital bank combining banking with secure cloud data storage.
+Customers get cloud storage limits linked to their account balances.
+The goal is to increase customers and forecast storage needs accurately.
+Analyze growth trends and provide insights for infrastructure and customer strategies.
 
-The Data Bank team is focused on two key goals:
+# Provided Dataset
+![image](https://github.com/user-attachments/assets/cd36637e-c935-4c8d-a30e-3cbd60f727d6)
 
-Grow their customer base rapidly in this competitive digital banking space.
 
-Accurately forecast how much data storage capacity they will need as customers deposit more money and new customers join.
+
+
+
+
+
+
