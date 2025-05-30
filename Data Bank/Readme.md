@@ -12,6 +12,12 @@ Analyze growth trends and provide insights for infrastructure and customer strat
 ![image](https://github.com/user-attachments/assets/cd36637e-c935-4c8d-a30e-3cbd60f727d6)
 
 
+# Case Study
+
+The following case study questions include some general data exploration analysis for the nodes and transactions before diving right into the core business questions and finishes with a challenging final request!
+
+- A. Customer Nodes Exploration
+
 
 
 
