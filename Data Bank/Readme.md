@@ -16,7 +16,8 @@ Analyze growth trends and provide insights for infrastructure and customer strat
 
 The following case study questions include some general data exploration analysis for the nodes and transactions before diving right into the core business questions and finishes with a challenging final request!
 
-- A. Customer Nodes Exploration
+- A. [Customer Nodes Exploration](https://github.com/RathiAnki/-8WeekSQLChallenge-Dany-Ma-/blob/main/Data%20Bank/A.%20Customer%20Nodes%20Exploration.md)
+
 
 
 
