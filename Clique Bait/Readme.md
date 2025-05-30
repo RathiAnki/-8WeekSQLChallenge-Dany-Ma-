@@ -7,4 +7,4 @@ In this case study - you are required to support Danny’s vision and analyse hi
 
 # Case Study 
 
-1.[Enterprise Relationship Diagram]
+1.[Enterprise Relationship Diagram](https://github.com/RathiAnki/-8WeekSQLChallenge-Dany-Ma-/blob/main/Clique%20Bait/Enterprise%20Relationship%20Diagram.md)
