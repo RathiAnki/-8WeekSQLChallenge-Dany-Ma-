@@ -7,7 +7,7 @@ A huge thank you to Data with Danny for putting together such an insightful and 
 Please find the solution links for the case studies below. Simply click on the links to access solution.
 
 
-[Case Study #1](https://github.com/RathiAnki/-8WeekSQLChallenge-Dany-Ma-/blob/main/Case%20Study%20%231)
+[Case Study #1](https://github.com/RathiAnki/-8WeekSQLChallenge-Dany-Ma-/tree/main/Danny's%20Diner)
 
 [Case Study #2](https://github.com/RathiAnki/-8WeekSQLChallenge-Dany-Ma-/tree/main/Pizza%20Runner)
 
