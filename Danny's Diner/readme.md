@@ -29,11 +29,12 @@ Members – Tracks customers who joined the loyalty program.
   
 **1. What is the total amount each customer spent at the restaurant?
 
+```sql
 Select s.customer_id,Sum(m.price) as amount_spent from sales s
 join menu m
 on s.product_id =m.product_id
 group by s.customer_id;
-
+```
 | customer_id | total_sales |
 |------------|------------|
 | A          | 76         |
@@ -42,11 +43,11 @@ group by s.customer_id;
 
 
 **2. How many days has each customer visited the restaurant?
-
+```sql
 Select s.customer_id,Count(distinct order_date)as cutsomer_visit_day
 from sales s
 group by s.customer_id;
-
+```
 | customer_id | customer_visit_day |
 |------------|-------------------|
 | A          | 4                 |
@@ -57,14 +58,14 @@ group by s.customer_id;
 
 
 **3. What was the first item from the menu purchased by each customer?
-
+```sql
 Select customer_id, product_name from (
 Select s.customer_id,m.product_name,s.order_date,row_number()over(partition by s.customer_id order by s.order_date) as rn
 from sales s
 join menu m
 on s.product_id =m.product_id)a
 where rn =1;
-
+```
 | customer_id | product_name |
 |------------|--------------|
 | A          | sushi        |
@@ -74,14 +75,14 @@ where rn =1;
 
 
 **4. What is the most purchased item on the menu and how many times was it purchased by all customers?
-
+```sql
 Select top 1 m.product_name , count(*) as total_purchses
 from sales s
 join menu m
 on s.product_id =m.product_id
 group by m.product_name
 order by total_purchses desc;
-
+```
 | product_name | total_purchases |
 |-------------|----------------|
 | ramen       | 8              |
@@ -89,7 +90,7 @@ order by total_purchses desc;
 
 
 **5. Which item was the most popular for each customer?
-
+```sql
 Select customer_id ,product_name, cnt
 from(
 Select s.customer_id ,m.product_name, count(1)as cnt,dense_rank() over(partition  by customer_id order by count(1) desc)as rn
@@ -98,7 +99,7 @@ join menu m
 on s.product_id =m.product_id
 group by s.customer_id ,m.product_name) a
 where rn =1;
-
+```
 | customer_id | product_name | cnt |
 |------------|-------------|-----|
 | A          | ramen       | 3   |
