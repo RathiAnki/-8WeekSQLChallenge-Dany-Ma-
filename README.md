@@ -11,6 +11,14 @@ Please find the solution links for the case studies below. Simply click on the l
 
 [Case Study #2](https://github.com/RathiAnki/-8WeekSQLChallenge-Dany-Ma-/tree/main/Pizza%20Runner)
 
+[Case Study #3](https://github.com/RathiAnki/-8WeekSQLChallenge-Dany-Ma-/tree/main/Foodie-Fi)
+
+[Case Study #4](https://github.com/RathiAnki/-8WeekSQLChallenge-Dany-Ma-/tree/main/Data%20Bank)
+
+[Case Study #5](https://github.com/RathiAnki/-8WeekSQLChallenge-Dany-Ma-/tree/main/Data%20Mart)
+
+[Case Study #6](https://github.com/RathiAnki/-8WeekSQLChallenge-Dany-Ma-/tree/main/Clique%20Bait)
+
 
  **Learnings**
  
